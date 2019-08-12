@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OXUA</title>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"  />    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <section id="main">
+      <nav class="navbar navbar-right fixed-top navbar-expand-lg navbar-light navbar transparent navbar-inverse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span> 
+        </button> <!--NAVBAR/BTN-->
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="img/logo.png"></a> <!--LOGO-->
+        <div class="collapse navbar-collapse" id="navbarText" style="margin-left:10%">
+          <ul class="navbar-nav mr-auto" id="dropdown" style="margin-left:5%"></ul> <!--DROPDOWN-->
+
+          <span class="navbar-text navbar-icons">
+            <span><img src="img/icones/search1.png" class="icon hand" id="icon-search"></span>
+            <span><img src="img/icones/login1.png" class="icon hand" id="icon-login"></span>
+            <span>
+              <span id="cart_circle">02</span>
+              <img src="img/icones/cart1.png" class="icon hand" id="icon-cart"></span>
+          </span> <!--BUSCA/LOGIN/CART -->
+        </div>
+      </nav> <!--NAVBAR-->
+
+      <div id="search_bar">
+        <div class="row" style="margin-top:10px;">
+          <div class="col-sm-4">&nbsp;</div>              
+          <div class="col-sm-5"><input type="text" placeholder="Digite aqui o que procura" class="search_text"></div>
+          <div class="col-sm-1"><input type="button" class="search_btn"></div>
+          <div class="col-sm-2">&nbsp;</div>              
+        </div>
+      </div> <!--SEARCH BAR-->      
+
+      <div id="popup_login">
+        <div>
+            <div class="popup_login_line">Olá, <b>Você ainda não está logado</b></div>
+            <div class="popup_login_line">Login / Cadastre-se</div>
+        </div>
+      </div> <!--POPUP LOGIN-->
+
+      <div id="popup_cart">
+        <div>
+            <div class="popup_cart_line" style="height:25px;font-size: 10px">
+              <div class="row">
+                <div class="col-sm-5">PRODUTO</div>
+                <div class="col-sm-3">PREÇO</div>
+                <div class="col-sm-2">QTD.</div>
+                <div class="col-sm-2">EXCLUIR</div>
+              </div>
+            </div>  
+            <div class="popup_cart_line">
+              <div class="row">
+                <div class="col-sm-2"><img src="img/icones/modelo.jpg"></div>
+                <div class="col-sm-3 popup_col">Biquíni Cortininha Palmeira</div>
+                <div class="col-sm-3 popup_col">R$ 129,90</div>
+                <div class="col-sm-2 popup_col">01</div>
+                <div class="col-sm-2 popup_col" style="padding-left:25px">X</div>
+              </div>
+            </div>
+            <div  class="popup_cart_line" style="padding-top: 0px">
+              <div class="row">
+                <div class="col-sm-6" style="padding-top: 10px">
+                  <span class="popup_valor" style="font-size:10px;">TOTAL</span>
+                  <span class="popup_valor" style="font-size:18px;"> R$ 129,90</span>
+                </div>
+                <div class="col-sm-6"><input type="button" class="finalizar_btn" value="FINALIZAR PEDIDO"></div>
+              </div>              
+            </div>
+        </div>
+      </div> <!--POPUP CART-->
+
+      <div class="carousel_banner" id="carousel_banner">
+      </div> <!-- CAROUSEL - BANNER -->
+    </section> <!-- MAIN -->
+
+    <section class="produtos">
+      <img src="img/produtos/sport1.jpg" class="produto img-fluid hand" />
+      <img src="img/produtos/maio1.jpg" class="produto img-fluid hand" />
+      <img src="img/produtos/biquini1.jpg" class="produto img-fluid hand" />
+    </section> <!-- PRODUTOS -->
+
+    <div class="vitrine parallax"  data-parallax="scroll" data-image-src="img/banners/banner-paralax.jpg">
+      <div class="vitrine_text hand">
+    </div><!-- VITRINE -->
+
+      <section class="content_vitrine">
+          <div class="carousel_vitrine" id="carousel_vitrine">
+          </div>
+
+          <div class="submenu">
+            <div class="row submenu_row row1">
+              <div class="col-md-4 hand" style="text-align: right"><span class="extra_bold">FRETE GRÁTIS</span> nas compras acima de R$ 500</div>
+              <div class="col-md-4 hand"><span class="extra_bold">7 DIAS</span> para devolução</div>
+              <div class="col-md-4 hand" style="text-align: left"><span class="extra_bold">3X SEM JUROS</span> Parcele no cartão de crédito</div>
+            </div>
+
+            <div class="row submenu_row row2">
+              <div class="col-md-2 col-sm-12 col-12 hand">Sobre nós<br>Fale Conosco<br>Atacado</div>
+              <div class="col-md-2 col-sm-12 col-12 hand">Dúvidas Frequentes<br>Entregas e Prazos<br>Trocas e Devoluções<br>Política de Privacidade<br>Formas de pagamento<br>Tabela de Medidas</div>
+              <div class="col-md-2 col-sm-12 col-12 hand">Entrar<br>Minha conta<br>Meus Pedidos<br>Central de Atendimento</div>
+              <div class="col-md-2 col-sm-12 col-12 hand">Biquínis<br>Maiôs<br>Bodies<br>Saídas</div>
+              <div class="col-md-3 col-sm-12 col-12"><span class="extra_bold">NEW</span> RECEBA PROMOÇÕES E NOVIDADES<br>
+                <div class="news_line">
+                  <input type="text" class="news news_text" placeholder="Digite seu e-mail"><input type="button" class="news news_button">
+                </div>
+              </div>
+              <div class="col-md-1 hand"><img src="img/footer/instagram.png" class="instagram"></div>
+            </div><!-- SUBMENU -->
+
+          </div>
+      </section><!-- CAROUSEL -->
+      <div class="vitrine_bg">
+      </div>
+
+    </div>
+
+    <section class="footer">
+          <div class="row footer_content">
+            <div class="col-md-1 col-sm-12 footer_col"><img src="img/footer/logo_footer.png" class="hand"></div>
+            <div class="col-md-3 col-sm-12 footer_col">CNPJ 23.104.344/0001-46 Avenida São Paulo<br>1547 Zona 02 - Salas 1 e 2 Cianorte - PR</div>
+            <div class="col-md-2 col-sm-12 footer_col">FORMAS DE PAGAMENTO</div>
+            <div class="col-md-3 col-sm-12 footer_col"><img src="img/footer/pay.png"></div>
+            <div class="col-md-1 col-sm-12 footer_col">SEGURANÇA</div>
+            <div class="col-md-2 col-sm-12 footer_col"><img src="img/footer/siteblindado.png"><img src="img/footer/ebit.png"></div>
+          </div>       
+    </section> <!-- FOOTER -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/parallax.min.js"></script>  
+  </body>
+</html>
