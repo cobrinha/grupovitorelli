@@ -1,0 +1,31 @@
+<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Desafio - Grupo Vitorelli</title>
+</head>
+<body>
+	<h1>Desafio 1: Rodando no console.</h1>
+</body>
+<script type="text/javascript">
+	window.onload = function(e){ 
+		if (window.XMLHttpRequest) {
+		    xhr = new XMLHttpRequest();
+		 } else {
+		    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		} 
+
+		var url = 'https://www.grupovitorelli.com.br/'
+		xhr.open('GET', url, true);
+		xhr.onload = function () {
+		  console.log("Char count / total: "+xhr.responseText.toString().length);
+		  console.log("Char count / total sem breaklines: "+xhr.responseText.toString().replace(/(\r\n|\n|\r)/gm, "").length);
+		  console.log("Char count / total sem whitespaces: "+xhr.responseText.toString().replace(/\s/g, "").length);
+		};
+		xhr.send(null);	
+	}
+</script>
+</html>

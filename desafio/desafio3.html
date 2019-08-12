@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SELEÇÃO FRONT-END</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous">
+    </script>     
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Barlow:100,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 10rem;
+        text-align: center;
+      }
+      h2 {
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 100;
+      }
+      p,
+      li {
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+      }
+      ul {
+        list-style: none;
+        max-width: 70%;
+        margin: 0 auto;
+      }
+      h2 strong {
+        font-weight: bold;
+      }
+      i {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 45px;
+      }
+      span {
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 100;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hey Guys!</h1>
+    <h2>Sejam bem vindos ao nosso <strong>processo de seleção.</strong></h2>
+
+    <p>
+      Para você que pesquisou sobre nós, vai um mini desafio.
+      <strong>E isso pode colocar você a frente dos demais candidatos.</strong>
+    </p>
+    <i class="lni-users"></i>
+    <br />
+    <br />
+    <ul>
+      <li>
+        - Faça uma função que rode no console do browser. Ela precisa retornar
+        dentro de um console, a quantidade exata de caracteres que nosso html
+        possui.
+      </li>
+      <li>- Descubra quais fontes estão sendo utilizadas</li>
+      <li>
+        - Com Jquery, crie um novo html que substituira os textos após nosso
+        icone de users.
+      </li>
+    </ul>
+    <br />
+    <span
+      >Quando chegar sua vez, na entrevista pessoal, mostre para nós o que fez e
+      como descobriu! Bem facinho não acha?</span
+    >
+  </body>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+       var novoLi = $("<li>-Texto novo LI</li><li>-Texto novo LI</li>");
+       var novoSpan = "Texto do novo no elemento SPAN";
+       $( "ul" ).html(novoLi); 
+       $( "span" ).html(novoSpan); 
+    });
+  </script>  
+</html>
+
+
