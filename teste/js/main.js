@@ -204,14 +204,14 @@ $(document).ready(function(){
       {
         breakpoint: 879,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
         breakpoint: 750,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       },
